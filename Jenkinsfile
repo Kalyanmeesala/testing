@@ -3,7 +3,7 @@ node {
         step([$class: 'WsCleanup'])
     }
     stage('Clone sources') {
-        git url: 'https://github.com/Kalyanmeesala/testing.git', branch:'practice'
+        git url: 'https://github.com/Kalyanmeesala/testing.git', branch:'solution'
     }
     stage('Extract ZipFiles') {
         sh 'unzip volume-css.zip'
